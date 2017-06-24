@@ -28,6 +28,8 @@ public class MainWindowOverviewController implements Initializable {
     private CheckBox bit8, bit9, bit10, bit11, bit12, bit13, bit14, bit15;
     @FXML
     private CheckBox bit16, bit17, bit18, bit19, bit20, bit21, bit22, bit23;
+    @FXML
+    private CheckBox bit24, bit25, bit26, bit27, bit28, bit29, bit30, bit31;
 
     @FXML
     private Button presetPro, presetProWithoutPermissions;
@@ -113,7 +115,7 @@ public class MainWindowOverviewController implements Initializable {
     private List<CheckBox> getAllCheckBoxes(){
         allCheckBoxes.clear();
         for (int i = 0; i < CheckboxContainer.getItems().size(); i++) {
-            ObservableList<Node> nodes = ((AnchorPane) CheckboxContainer.getItems().get(i)).getChildren();
+            ObservableList<Node> nodes = ((AnchorPane) CheckboxContainer.getItems().get(i)).getChildren().;
             allCheckBoxes.addAll(nodes.stream().map(node -> (CheckBox) node).collect(Collectors.toList()));
         }
         return allCheckBoxes;
