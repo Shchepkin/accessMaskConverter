@@ -18,7 +18,7 @@ package app.view;
 
         import static app.model.Actions.*;
 
-public class mainWindowOverviewController  implements Initializable {
+public class MainWindowOverviewController implements Initializable {
     private Actions action = new Actions();
     private Map preset = new HashMap<String, String>();
 
@@ -122,9 +122,12 @@ public class mainWindowOverviewController  implements Initializable {
     private static void addTextFieldValidationListener(final TextField tf, final int maxLength) {
         String numberMatcher = "[0-9AaBbCcDdEeFf]*";
         tf.textProperty().addListener((ov, oldValue, newValue) -> {
+
             // text must be maximum 8 symbols and contains only HEX symbols
             if (tf.getText().length() > maxLength || !newValue.matches(numberMatcher)) {
                 tf.setText(oldValue);
+            }else {
+                tf.setText(newValue.toUpperCase());
             }
         });
     }

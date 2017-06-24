@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="555.0" maxWidth="520.0" minHeight="555.0" minWidth="520.0" prefHeight="555.0" prefWidth="520.0" snapToPixel="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.mainWindowOverviewController">
+<AnchorPane maxHeight="555.0" maxWidth="520.0" minHeight="555.0" minWidth="520.0" prefHeight="555.0" prefWidth="520.0" snapToPixel="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.MainWindowOverviewController">
    <children>
       <SplitPane dividerPositions="0.717687074829932" layoutX="19.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
         <items>
@@ -228,7 +228,7 @@
                <children>
                   <TextField id="accessMaskField" fx:id="accessMaskField" alignment="CENTER" layoutX="13.0" layoutY="15.0" maxHeight="35.0" maxWidth="130.0" minHeight="35.0" minWidth="130.0" prefHeight="35.0" prefWidth="130.0" snapToPixel="false" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                      <font>
-                        <Font size="20.0" />
+                        <Font size="16.0" />
                      </font>
                   </TextField>
                   <Button id="presetPro" fx:id="presetPro" alignment="CENTER" contentDisplay="CENTER" depthTest="DISABLE" layoutX="10.0" layoutY="340.0" mnemonicParsing="false" onAction="#setPresetPro" prefHeight="26.0" prefWidth="130.0" text="PRO" textAlignment="CENTER" AnchorPane.rightAnchor="10.0">
