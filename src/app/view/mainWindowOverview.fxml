@@ -3,18 +3,20 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="555.0" maxWidth="520.0" minHeight="740.0" minWidth="560.0" prefHeight="555.0" prefWidth="520.0" snapToPixel="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.MainWindowOverviewController">
    <children>
-      <SplitPane dividerPositions="0.717687074829932" layoutX="19.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <SplitPane dividerPositions="0.6733576642335767" layoutX="19.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
         <items>
           <AnchorPane prefHeight="588.0" prefWidth="349.0" SplitPane.resizableWithParent="false">
                <children>
-                  <SplitPane fx:id="CheckboxContainer" dividerPositions="0.24517906336088155, 0.4972451790633609, 0.7589531680440771" orientation="VERTICAL" prefHeight="728.0" prefWidth="389.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <SplitPane fx:id="CheckboxContainer" dividerPositions="0.24517906336088155, 0.4972451790633609, 0.7589531680440771" orientation="VERTICAL" prefHeight="742.0" prefWidth="389.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
                       <AnchorPane maxHeight="175.0" minHeight="175.0" SplitPane.resizableWithParent="false">
                            <children>
@@ -290,9 +292,173 @@
                         </AnchorPane>
                     </items>
                   </SplitPane>
+                  <Pane nodeOrientation="RIGHT_TO_LEFT" prefHeight="728.0" prefWidth="390.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="labelBit0" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="12.0" maxWidth="330.0" nodeOrientation="LEFT_TO_RIGHT" text="dfgsdfgsdfgs,jyhgdsfvukybdsarfukygdrfukygsdrfkuygdsrkfuygfuykgearkuygersfser">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit1" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="32.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit2" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="52.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit3" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="72.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit4" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="92.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit5" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="112.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit6" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="132.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit7" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="152.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit8" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="196.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit9" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="216.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit10" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="236.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit11" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="256.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit12" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="276.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit13" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="296.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit14" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="316.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit15" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="336.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit16" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="378.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit17" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="398.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit18" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="418.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit19" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="438.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit20" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="458.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit21" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="478.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit22" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="498.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit23" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="518.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit24" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="560.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit25" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="580.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit26" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="600.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit27" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="620.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit28" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="640.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit29" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="660.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit30" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="680.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelBit31" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="700.0" maxWidth="330.0" text="not use">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
                </children>
             </AnchorPane>
-          <AnchorPane minWidth="150.0" SplitPane.resizableWithParent="false">
+          <AnchorPane maxWidth="150.0" minWidth="150.0" SplitPane.resizableWithParent="false">
                <children>
                   <TextField id="accessMaskField" fx:id="accessMaskField" alignment="CENTER" layoutX="13.0" layoutY="15.0" maxHeight="35.0" maxWidth="130.0" minHeight="35.0" minWidth="130.0" prefHeight="35.0" prefWidth="130.0" snapToPixel="false" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                      <font>

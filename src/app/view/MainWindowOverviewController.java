@@ -1,22 +1,20 @@
 package app.view;
 
-        import app.model.Actions;
-        import javafx.collections.ObservableList;
-        import javafx.fxml.FXML;
-        import javafx.fxml.Initializable;
-        import javafx.scene.Node;
-        import javafx.scene.control.Button;
-        import javafx.scene.control.CheckBox;
-        import javafx.scene.control.SplitPane;
-        import javafx.scene.control.TextField;
-        import javafx.scene.layout.AnchorPane;
+import app.model.Actions;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 
-        import java.io.FileNotFoundException;
-        import java.net.URL;
-        import java.util.*;
-        import java.util.stream.Collectors;
+import java.io.FileNotFoundException;
+import java.net.URL;
+import java.util.*;
+import java.util.stream.Collectors;
 
-        import static app.model.Actions.*;
+import static app.model.Actions.fromCheckBoxesToHex;
+import static app.model.Actions.fromHexToCheckBoxes;
 
 public class MainWindowOverviewController implements Initializable {
     private Actions action = new Actions();
@@ -30,6 +28,17 @@ public class MainWindowOverviewController implements Initializable {
     private CheckBox bit16, bit17, bit18, bit19, bit20, bit21, bit22, bit23;
     @FXML
     private CheckBox bit24, bit25, bit26, bit27, bit28, bit29, bit30, bit31;
+
+    @FXML
+    private Label labelBit0, labelBit1, labelBit2, labelBit3, labelBit4, labelBit5, labelBit6, labelBit7;
+    @FXML
+    private Label labelBit8, labelBit9, labelBit10, labelBit11, labelBit12, labelBit13, labelBit14, labelBit15;
+    @FXML
+    private Label labelBit16, labelBit17, labelBit18, labelBit19, labelBit20, labelBit21, labelBit22, labelBit23;
+    @FXML
+    private Label labelBit24, labelBit25, labelBit26, labelBit27, labelBit28, labelBit29, labelBit30, labelBit31;
+
+
 
     @FXML
     private Button presetPro, presetProWithoutPermissions;
@@ -50,50 +59,50 @@ public class MainWindowOverviewController implements Initializable {
 
     @FXML
     public void setPresetPro() {
-        if (preset.isEmpty()){
+        if (preset.isEmpty()) {
             System.out.println("set PresetUser as hardCode value ffffffff");
             accessMaskField.setText("ffffffff");
-        }else {
+        } else {
             accessMaskField.setText(preset.get("Pro").toString());
         }
     }
 
     @FXML
     public void setPresetProWithoutPermissions() {
-        if (preset.isEmpty()){
+        if (preset.isEmpty()) {
             System.out.println("set PresetUser as hardCode value 00000000");
             accessMaskField.setText("00000000");
-        }else {
+        } else {
             accessMaskField.setText(preset.get("ProWithoutPermissions").toString());
         }
     }
 
     @FXML
     public void setPresetMaster() {
-        if (preset.isEmpty()){
+        if (preset.isEmpty()) {
             System.out.println("set PresetUser as hardCode value ffffffff");
             accessMaskField.setText("ffffffff");
-        }else {
+        } else {
             accessMaskField.setText(preset.get("Master").toString());
         }
     }
 
     @FXML
     public void setPresetMasterWithoutPermissions() {
-        if (preset.isEmpty()){
+        if (preset.isEmpty()) {
             System.out.println("set PresetUser as hardCode value 00090f26");
             accessMaskField.setText("00090f26");
-        }else {
+        } else {
             accessMaskField.setText(preset.get("MasterWithoutPermissions").toString());
         }
     }
 
     @FXML
     public void setPresetUser() {
-        if (preset.isEmpty()){
+        if (preset.isEmpty()) {
             System.out.println("set PresetUser as hardCode value 00010f00");
             accessMaskField.setText("00010f00");
-        }else {
+        } else {
             accessMaskField.setText(preset.get("User").toString());
         }
     }
@@ -112,10 +121,10 @@ public class MainWindowOverviewController implements Initializable {
         }
     }
 
-    private List<CheckBox> getAllCheckBoxes(){
+    private List<CheckBox> getAllCheckBoxes() {
         allCheckBoxes.clear();
         for (int i = 0; i < CheckboxContainer.getItems().size(); i++) {
-            ObservableList<Node> nodes = ((AnchorPane) CheckboxContainer.getItems().get(i)).getChildren().;
+            ObservableList<Node> nodes = ((AnchorPane) CheckboxContainer.getItems().get(i)).getChildren();
             allCheckBoxes.addAll(nodes.stream().map(node -> (CheckBox) node).collect(Collectors.toList()));
         }
         return allCheckBoxes;
@@ -128,7 +137,7 @@ public class MainWindowOverviewController implements Initializable {
             // text must be maximum 8 symbols and contains only HEX symbols
             if (tf.getText().length() > maxLength || !newValue.matches(numberMatcher)) {
                 tf.setText(oldValue);
-            }else {
+            } else {
                 tf.setText(newValue.toUpperCase());
             }
         });
