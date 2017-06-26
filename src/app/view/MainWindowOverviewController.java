@@ -5,8 +5,10 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 
 import java.io.FileNotFoundException;
@@ -20,6 +22,7 @@ import static app.model.Actions.fromHexToCheckBoxes;
 public class MainWindowOverviewController implements Initializable {
     private Actions action = new Actions();
     private Map preset = new HashMap<String, String>();
+    private Map bitLabelsMap = new HashMap<String, String>();
 
     @FXML
     private CheckBox bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7;
@@ -54,12 +57,13 @@ public class MainWindowOverviewController implements Initializable {
     private TextField accessMaskField;
 
     @FXML
-    private SplitPane CheckboxContainer;
-
-    @FXML
     private Pane paneCheckboxContainer;
 
+    @FXML
+    private Pane paneBitLabelsContainer;
+
     private List<CheckBox> allCheckBoxes = new ArrayList<>();
+    private List<Label> allBitLabels = new ArrayList<>();
 
     @FXML
     public void setPresetPro() {
@@ -132,6 +136,13 @@ public class MainWindowOverviewController implements Initializable {
         return allCheckBoxes;
     }
 
+    private List<Label> getAllBitLabelsElements() {
+        allBitLabels.clear();
+        ObservableList<Node> nodes = (paneBitLabelsContainer.getChildren());
+        allBitLabels.addAll(nodes.stream().map(node -> (Label) node).collect(Collectors.toList()));
+        return allBitLabels;
+    }
+
     private static void addTextFieldValidationListener(final TextField tf, final int maxLength) {
         String numberMatcher = "[0-9AaBbCcDdEeFf]*";
         tf.textProperty().addListener((ov, oldValue, newValue) -> {
@@ -145,13 +156,31 @@ public class MainWindowOverviewController implements Initializable {
         });
     }
 
+    private void setBitLabels() {
+        if (!bitLabelsMap.isEmpty()) {
+            getAllBitLabelsElements();
+            for (Label bitLabel : allBitLabels) {
+                System.out.println("set label for " + bitLabel.getId() + " as " + bitLabelsMap.get(bitLabel.getId()));
+                bitLabel.setText(bitLabelsMap.get(bitLabel.getId()).toString());
+            }
+        }else System.out.println("can't read Labels from settings file");
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        String presetCollection = "preset";
+        String labelsCollection = "bitLabels";
+
         addTextFieldValidationListener(accessMaskField, 8);
         try {
-            preset = action.getCollectionFromJson("settings.json", "preset");
+            preset = action.getCollectionFromJson("settings.json", presetCollection);
+            bitLabelsMap = action.getCollectionFromJson("settings.json", labelsCollection);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch (NullPointerException e) {
+            System.out.println("some collections was not found in settings file");
+            e.printStackTrace();
         }
+        setBitLabels();
     }
 }

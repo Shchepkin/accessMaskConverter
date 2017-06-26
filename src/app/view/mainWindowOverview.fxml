@@ -24,164 +24,164 @@
                   <Separator layoutY="525.0" maxWidth="447.0" minWidth="447.0" />
                   <HBox prefHeight="388.0" prefWidth="447.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Pane maxWidth="400.0" minWidth="400.0" nodeOrientation="RIGHT_TO_LEFT">
+                        <Pane fx:id="paneBitLabelsContainer" maxWidth="400.0" minWidth="400.0" nodeOrientation="RIGHT_TO_LEFT">
                            <children>
-                              <Label fx:id="labelBit0" alignment="CENTER_RIGHT" layoutY="11.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="00" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit0" alignment="CENTER_RIGHT" layoutY="11.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 00" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit1" alignment="CENTER_RIGHT" layoutY="31.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="01" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit1" alignment="CENTER_RIGHT" layoutY="31.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 01" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit2" alignment="CENTER_RIGHT" layoutY="51.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="02" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit2" alignment="CENTER_RIGHT" layoutY="51.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 02" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit3" alignment="CENTER_RIGHT" layoutY="71.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="03" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit3" alignment="CENTER_RIGHT" layoutY="71.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 03" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit4" alignment="CENTER_RIGHT" layoutY="91.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="04" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit4" alignment="CENTER_RIGHT" layoutY="91.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 04" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit5" alignment="CENTER_RIGHT" layoutY="111.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="05" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit5" alignment="CENTER_RIGHT" layoutY="111.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 05" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit6" alignment="CENTER_RIGHT" layoutY="131.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="06" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit6" alignment="CENTER_RIGHT" layoutY="131.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 06" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit7" alignment="CENTER_RIGHT" layoutY="151.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="07" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit7" alignment="CENTER_RIGHT" layoutY="151.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 07" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit8" alignment="CENTER_RIGHT" layoutY="186.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="08" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit8" alignment="CENTER_RIGHT" layoutY="186.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 08" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit9" alignment="CENTER_RIGHT" layoutY="206.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="09" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit9" alignment="CENTER_RIGHT" layoutY="206.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 09" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit10" alignment="CENTER_RIGHT" layoutY="226.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="10" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit10" alignment="CENTER_RIGHT" layoutY="226.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 10" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit11" alignment="CENTER_RIGHT" layoutY="246.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="11" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit11" alignment="CENTER_RIGHT" layoutY="246.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 11" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit12" alignment="CENTER_RIGHT" layoutY="266.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="12" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit12" alignment="CENTER_RIGHT" layoutY="266.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 12" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit13" alignment="CENTER_RIGHT" layoutY="286.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="13" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit13" alignment="CENTER_RIGHT" layoutY="286.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 13" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit14" alignment="CENTER_RIGHT" layoutY="306.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="14" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit14" alignment="CENTER_RIGHT" layoutY="306.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 14" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit15" alignment="CENTER_RIGHT" layoutY="326.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="15" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit15" alignment="CENTER_RIGHT" layoutY="326.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 15" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit16" alignment="CENTER_RIGHT" layoutY="361.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="16" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit16" alignment="CENTER_RIGHT" layoutY="361.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 16" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit17" alignment="CENTER_RIGHT" layoutY="381.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="17" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit17" alignment="CENTER_RIGHT" layoutY="381.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 17" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit18" alignment="CENTER_RIGHT" layoutY="401.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="18" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit18" alignment="CENTER_RIGHT" layoutY="401.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 18" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit19" alignment="CENTER_RIGHT" layoutY="421.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="19" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit19" alignment="CENTER_RIGHT" layoutY="421.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 19" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit20" alignment="CENTER_RIGHT" layoutY="441.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="20" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit20" alignment="CENTER_RIGHT" layoutY="441.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 20" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit21" alignment="CENTER_RIGHT" layoutY="461.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="21" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit21" alignment="CENTER_RIGHT" layoutY="461.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 21" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit22" alignment="CENTER_RIGHT" layoutY="481.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="22" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit22" alignment="CENTER_RIGHT" layoutY="481.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 22" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit23" alignment="CENTER_RIGHT" layoutY="501.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="23" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit23" alignment="CENTER_RIGHT" layoutY="501.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 23" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit24" alignment="CENTER_RIGHT" layoutY="536.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="24">
+                              <Label fx:id="labelBit24" alignment="CENTER_RIGHT" layoutY="536.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 24">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit25" alignment="CENTER_RIGHT" layoutY="556.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="25" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit25" alignment="CENTER_RIGHT" layoutY="556.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 25" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit26" alignment="CENTER_RIGHT" layoutY="576.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="26" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit26" alignment="CENTER_RIGHT" layoutY="576.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 26" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit27" alignment="CENTER_RIGHT" layoutY="596.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="27" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit27" alignment="CENTER_RIGHT" layoutY="596.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 27" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit28" alignment="CENTER_RIGHT" layoutY="616.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="28" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit28" alignment="CENTER_RIGHT" layoutY="616.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 28" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit29" alignment="CENTER_RIGHT" layoutY="636.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="29" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit29" alignment="CENTER_RIGHT" layoutY="636.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 29" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit30" alignment="CENTER_RIGHT" layoutY="656.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="30" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit30" alignment="CENTER_RIGHT" layoutY="656.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 30" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="labelBit31" alignment="CENTER_RIGHT" layoutY="676.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="31" textOverrun="WORD_ELLIPSIS">
+                              <Label fx:id="labelBit31" alignment="CENTER_RIGHT" layoutY="676.0" maxWidth="395.0" nodeOrientation="LEFT_TO_RIGHT" text="bit 31" textOverrun="WORD_ELLIPSIS">
                                  <font>
                                     <Font size="12.0" />
                                  </font>
@@ -195,7 +195,7 @@
                            <children>
                               <CheckBox fx:id="bit0" alignment="CENTER" contentDisplay="CENTER" layoutY="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="00">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -206,7 +206,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit1" alignment="CENTER" contentDisplay="CENTER" layoutY="30.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="01">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -217,7 +217,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit2" alignment="CENTER" contentDisplay="CENTER" layoutY="50.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="02">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -228,7 +228,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit3" alignment="CENTER" contentDisplay="CENTER" layoutY="70.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="03">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -239,7 +239,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit4" alignment="CENTER" contentDisplay="CENTER" layoutY="90.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="04">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -250,7 +250,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit5" alignment="CENTER" contentDisplay="CENTER" layoutY="110.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="05">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -261,7 +261,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit6" alignment="CENTER" contentDisplay="CENTER" layoutY="130.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="06">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -272,7 +272,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit7" alignment="CENTER" contentDisplay="CENTER" layoutY="150.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="07">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -283,7 +283,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit8" alignment="CENTER" contentDisplay="CENTER" layoutY="185.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="08">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -294,7 +294,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit9" alignment="CENTER" contentDisplay="CENTER" layoutY="205.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="09">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -305,7 +305,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit10" alignment="CENTER" contentDisplay="CENTER" layoutY="225.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="10">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -316,7 +316,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit11" alignment="CENTER" contentDisplay="CENTER" layoutY="245.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="11">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -327,7 +327,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit12" alignment="CENTER" contentDisplay="CENTER" layoutY="265.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="12">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -338,7 +338,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit13" alignment="CENTER" contentDisplay="CENTER" layoutY="285.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="13">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -349,7 +349,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit14" alignment="CENTER" contentDisplay="CENTER" layoutY="305.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="14">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -360,7 +360,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit15" alignment="CENTER" contentDisplay="CENTER" layoutY="325.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="15">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -371,7 +371,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit16" alignment="CENTER" contentDisplay="CENTER" layoutY="360.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="16">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -382,7 +382,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit17" alignment="CENTER" contentDisplay="CENTER" layoutY="380.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="17">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -393,7 +393,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit18" alignment="CENTER" contentDisplay="CENTER" layoutY="400.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="18">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -404,7 +404,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit19" alignment="CENTER" contentDisplay="CENTER" layoutY="420.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="19">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -415,7 +415,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit20" alignment="CENTER" contentDisplay="CENTER" layoutY="440.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="20">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -426,7 +426,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit21" alignment="CENTER" contentDisplay="CENTER" layoutY="460.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="21">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -437,7 +437,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit22" alignment="CENTER" contentDisplay="CENTER" layoutY="480.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="22">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -448,7 +448,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit23" alignment="CENTER" contentDisplay="CENTER" layoutY="500.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="23">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -459,7 +459,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit24" alignment="CENTER" contentDisplay="CENTER" layoutY="535.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="24">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -470,7 +470,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit25" alignment="CENTER" contentDisplay="CENTER" layoutY="555.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="25">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -481,7 +481,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit26" alignment="CENTER" contentDisplay="CENTER" layoutY="575.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="26">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -492,7 +492,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit27" alignment="CENTER" contentDisplay="CENTER" layoutY="595.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="27">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -503,7 +503,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit28" alignment="CENTER" contentDisplay="CENTER" layoutY="615.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="28">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -514,7 +514,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit29" alignment="CENTER" contentDisplay="CENTER" layoutY="635.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="29">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -525,7 +525,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit30" alignment="CENTER" contentDisplay="CENTER" layoutY="655.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="30">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />
@@ -536,7 +536,7 @@
                               </CheckBox>
                               <CheckBox fx:id="bit31" alignment="CENTER" contentDisplay="CENTER" layoutY="675.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="31">
                                  <padding>
-                                    <Insets right="5.0" />
+                                    <Insets right="7.0" />
                                  </padding>
                                  <font>
                                     <Font size="12.0" />

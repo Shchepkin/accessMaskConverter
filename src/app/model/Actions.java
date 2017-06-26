@@ -76,7 +76,6 @@ public class Actions {
 
     public Map getCollectionFromJson(String fileName, String collection) throws FileNotFoundException {
         Path path = getApplicationStartUp();
-        System.out.println(path);
         FileReader reader = new FileReader(path + File.separator + fileName);
         Gson gson = new Gson();
         JsonParser jp = new JsonParser();
