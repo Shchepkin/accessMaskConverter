@@ -57,7 +57,7 @@ public class Actions {
     }
 
     public static String fromHexToCheckBoxes(String hexAccessMask, List<CheckBox> allCheckBoxes){
-        String binString = String.format("%24s", hexToBin(hexAccessMask)).replace(" ", "0");
+        String binString = String.format("%32s", hexToBin(hexAccessMask)).replace(" ", "0");
         int iterator = 0;
         for (int i = binString.length() - 1; i >= 0 ; i--) {
             if(binString.charAt(i) == 48){
@@ -65,7 +65,8 @@ public class Actions {
             }else {
                 allCheckBoxes.get(iterator).setSelected(true);
             }
-            if(iterator < 23){
+
+            if(iterator < 50){
                 iterator++;
             }else break;
         }
@@ -75,7 +76,6 @@ public class Actions {
 
     public Map getCollectionFromJson(String fileName, String collection) throws FileNotFoundException {
         Path path = getApplicationStartUp();
-        System.out.println(path);
         FileReader reader = new FileReader(path + File.separator + fileName);
         Gson gson = new Gson();
         JsonParser jp = new JsonParser();

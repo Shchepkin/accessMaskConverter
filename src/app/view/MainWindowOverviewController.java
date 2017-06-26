@@ -5,8 +5,11 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 
 import java.io.FileNotFoundException;
 import java.net.URL;
@@ -19,6 +22,7 @@ import static app.model.Actions.fromHexToCheckBoxes;
 public class MainWindowOverviewController implements Initializable {
     private Actions action = new Actions();
     private Map preset = new HashMap<String, String>();
+    private Map bitLabelsMap = new HashMap<String, String>();
 
     @FXML
     private CheckBox bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7;
@@ -47,15 +51,19 @@ public class MainWindowOverviewController implements Initializable {
     @FXML
     private Button presetUser;
     @FXML
-    private Button Convert, Clear;
+    private Button convert, clear;
 
     @FXML
     private TextField accessMaskField;
 
     @FXML
-    private SplitPane CheckboxContainer;
+    private Pane paneCheckboxContainer;
+
+    @FXML
+    private Pane paneBitLabelsContainer;
 
     private List<CheckBox> allCheckBoxes = new ArrayList<>();
+    private List<Label> allBitLabels = new ArrayList<>();
 
     @FXML
     public void setPresetPro() {
@@ -115,19 +123,24 @@ public class MainWindowOverviewController implements Initializable {
     @FXML
     public void startConvert() {
         if (accessMaskField.getText().isEmpty()) {
-            accessMaskField.setText(fromCheckBoxesToHex(getAllCheckBoxes()));
+            accessMaskField.setText(fromCheckBoxesToHex(getAllCheckBoxesFromPane()));
         } else {
-            fromHexToCheckBoxes(accessMaskField.getText(), getAllCheckBoxes());
+            fromHexToCheckBoxes(accessMaskField.getText(), getAllCheckBoxesFromPane());
         }
     }
 
-    private List<CheckBox> getAllCheckBoxes() {
+    private List<CheckBox> getAllCheckBoxesFromPane() {
         allCheckBoxes.clear();
-        for (int i = 0; i < CheckboxContainer.getItems().size(); i++) {
-            ObservableList<Node> nodes = ((AnchorPane) CheckboxContainer.getItems().get(i)).getChildren();
-            allCheckBoxes.addAll(nodes.stream().map(node -> (CheckBox) node).collect(Collectors.toList()));
-        }
+        ObservableList<Node> nodes = (paneCheckboxContainer.getChildren());
+        allCheckBoxes.addAll(nodes.stream().map(node -> (CheckBox) node).collect(Collectors.toList()));
         return allCheckBoxes;
+    }
+
+    private List<Label> getAllBitLabelsElements() {
+        allBitLabels.clear();
+        ObservableList<Node> nodes = (paneBitLabelsContainer.getChildren());
+        allBitLabels.addAll(nodes.stream().map(node -> (Label) node).collect(Collectors.toList()));
+        return allBitLabels;
     }
 
     private static void addTextFieldValidationListener(final TextField tf, final int maxLength) {
@@ -143,13 +156,31 @@ public class MainWindowOverviewController implements Initializable {
         });
     }
 
+    private void setBitLabels() {
+        if (!bitLabelsMap.isEmpty()) {
+            getAllBitLabelsElements();
+            for (Label bitLabel : allBitLabels) {
+                System.out.println("set label for " + bitLabel.getId() + " as " + bitLabelsMap.get(bitLabel.getId()));
+                bitLabel.setText(bitLabelsMap.get(bitLabel.getId()).toString());
+            }
+        }else System.out.println("can't read Labels from settings file");
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        String presetCollection = "preset";
+        String labelsCollection = "bitLabels";
+
         addTextFieldValidationListener(accessMaskField, 8);
         try {
-            preset = action.getCollectionFromJson("settings.json", "preset");
+            preset = action.getCollectionFromJson("settings.json", presetCollection);
+            bitLabelsMap = action.getCollectionFromJson("settings.json", labelsCollection);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch (NullPointerException e) {
+            System.out.println("some collections was not found in settings file");
+            e.printStackTrace();
         }
+        setBitLabels();
     }
 }
