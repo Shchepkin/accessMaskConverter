@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 
 import java.io.FileNotFoundException;
 import java.net.URL;
@@ -47,13 +48,16 @@ public class MainWindowOverviewController implements Initializable {
     @FXML
     private Button presetUser;
     @FXML
-    private Button Convert, Clear;
+    private Button convert, clear;
 
     @FXML
     private TextField accessMaskField;
 
     @FXML
     private SplitPane CheckboxContainer;
+
+    @FXML
+    private Pane paneCheckboxContainer;
 
     private List<CheckBox> allCheckBoxes = new ArrayList<>();
 
@@ -115,18 +119,16 @@ public class MainWindowOverviewController implements Initializable {
     @FXML
     public void startConvert() {
         if (accessMaskField.getText().isEmpty()) {
-            accessMaskField.setText(fromCheckBoxesToHex(getAllCheckBoxes()));
+            accessMaskField.setText(fromCheckBoxesToHex(getAllCheckBoxesFromPane()));
         } else {
-            fromHexToCheckBoxes(accessMaskField.getText(), getAllCheckBoxes());
+            fromHexToCheckBoxes(accessMaskField.getText(), getAllCheckBoxesFromPane());
         }
     }
 
-    private List<CheckBox> getAllCheckBoxes() {
+    private List<CheckBox> getAllCheckBoxesFromPane() {
         allCheckBoxes.clear();
-        for (int i = 0; i < CheckboxContainer.getItems().size(); i++) {
-            ObservableList<Node> nodes = ((AnchorPane) CheckboxContainer.getItems().get(i)).getChildren();
-            allCheckBoxes.addAll(nodes.stream().map(node -> (CheckBox) node).collect(Collectors.toList()));
-        }
+        ObservableList<Node> nodes = (paneCheckboxContainer.getChildren());
+        allCheckBoxes.addAll(nodes.stream().map(node -> (CheckBox) node).collect(Collectors.toList()));
         return allCheckBoxes;
     }
 
